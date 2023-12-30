@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <center>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" type="text/javascript"></script>
+  
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(Mini)Wiki de JUJUTSU KAISEN</title>
+<h3>(Mini)Wiki de JUJUTSU KAISEN!!!</h3>
+<label>Aqui você aprendar sobre algumas técnicas de JUJUTSU KAISEN!!!
+  (nota:para visualizira as imagens deve por o mouse em cima da imagem, apertar o botão direito do mouse e clicsr na opção de abrir imagem em outra guia)
+</label>
+  <style>
+    .texto {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<br>
+  <span class="palavra" data-imagem="https://static.wikia.nocookie.net/jujutsu-kaisen/images/a/aa/Nobara_staying_true_to_herself_%28Anime%29.png/revision/latest?cb=20201017023605" data-texto="A técnica  da Boneca de Palha de Nobara Kugisaki concede a ela a habilidade de manipular seu martelo, pregos e boneca de palha. Ao fluir sua energia amaldiçoada através de seu equipamento, Nobara pode lançar pregos a longa distância e detoná-los, ou usar sua boneca de palha como um objeto de vudú para causar danos ao corpo de seu oponente" onclick="selecionarPalavra(this)">Técnica da Boneca de Palha/Nobara Kugisaki</span>
+  <br>
+  <span class="palavra" data-imagem="https://www.google.com/imgres?imgurl=https%3A%2F%2Fsm.ign.com%2Ft%2Fign_br%2Fscreenshot%2Fdefault%2Fsukuna-arte-jujutsu-kaisen_g3pd.1200.jpg&tbnid=4E7VhDH6TkJLcM&vet=12ahUKEwiIu7SRgLiDAxXHPLkGHV0nAwoQMygAegQIARBx..i&imgrefurl=https%3A%2F%2Fbr.ign.com%2Fjujutsu-kaisen%2F97574%2Fnews%2Fjujutsu-kaisen-arte-de-sukuna-por-brasileira-e-supremacia-amaldicoada&docid=qpVCV5oMy9O4HM&w=1200&h=675&q=sukuna&client=opera-gx&ved=2ahUKEwiIu7SRgLiDAxXHPLkGHV0nAwoQMygAegQIARBx" data-texto="A técnica de Sukuna é dividida em dois tipos de ataques de corte principais(ele pode produzir derivações desses dois ataques basicos) . O corte padrão é Desmontar, permitindo que Sukuna corte instantaneamente seu alvo em inúmeros cubos pequenos. O outro, Dividir, pode ser ajustado com energia amaldiçoada para cortar oponentes mais fortes em um único golpe poderoso." onclick="selecionarPalavra(this)">Técnica de cortes amaldiçoados/Ryomen Sukuna</span>
+  <br>
+  <span class="palavra" data-imagem="caminho_para_imagem3.jpg" data-texto="Texto da palavra 3" onclick="selecionarPalavra(this)">Técnica de desastre vúlcanico/Jogo</span>
+  <br>
+  <img class="imagem" src="" alt="Imagem da palavra">
+  <p class="texto"></p>
+  <script>
+    
+    function selecionarPalavra(elemento) {
+  let imagem = document.querySelector('.imagem');
+  let texto = document.querySelector('.texto');
+  imagem.src = elemento.dataset.imagem;
+  texto.textContent = elemento.dataset.texto;
+  let palavras = document.querySelectorAll('.palavra');
+  palavras.forEach(palavra => palavra.style.display = 'none');
+  elemento.style.display = 'inline';
+  imagem.style.display = 'block';
+  texto.style.display = 'block';
+}
+  </script>
+</body>
+</center>
+</html>
